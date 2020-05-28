@@ -13,6 +13,12 @@
 		E325231F246D8961002C82D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E325231D246D8961002C82D3 /* Main.storyboard */; };
 		E3252321246D8963002C82D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3252320246D8963002C82D3 /* Assets.xcassets */; };
 		E3252324246D8963002C82D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3252322246D8963002C82D3 /* LaunchScreen.storyboard */; };
+		E3252330246D8A16002C82D3 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E325232E246D8A16002C82D3 /* PopupViewController.swift */; };
+		E3252331246D8A16002C82D3 /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E325232F246D8A16002C82D3 /* PopupViewController.xib */; };
+		E3252333246D9120002C82D3 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252332246D9120002C82D3 /* TransitionDelegate.swift */; };
+		E3252335246D955D002C82D3 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252334246D955D002C82D3 /* PresentationController.swift */; };
+		E3252337246DA6D4002C82D3 /* OptionalViewsForReusables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252336246DA6D4002C82D3 /* OptionalViewsForReusables.swift */; };
+		E3252339246EDF26002C82D3 /* FordPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252338246EDF26002C82D3 /* FordPopUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		E3252320246D8963002C82D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3252323246D8963002C82D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3252325246D8963002C82D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E325232E246D8A16002C82D3 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		E325232F246D8A16002C82D3 /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
+		E3252332246D9120002C82D3 /* TransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
+		E3252334246D955D002C82D3 /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		E3252336246DA6D4002C82D3 /* OptionalViewsForReusables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalViewsForReusables.swift; sourceTree = "<group>"; };
+		E3252338246EDF26002C82D3 /* FordPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordPopUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,10 @@
 		E3252316246D8961002C82D3 /* ReusuableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				E3252338246EDF26002C82D3 /* FordPopUp.swift */,
+				E325232E246D8A16002C82D3 /* PopupViewController.swift */,
+				E325232F246D8A16002C82D3 /* PopupViewController.xib */,
+				E325232B246D896F002C82D3 /* Reusables */,
 				E3252317246D8961002C82D3 /* AppDelegate.swift */,
 				E3252319246D8961002C82D3 /* SceneDelegate.swift */,
 				E325231B246D8961002C82D3 /* ViewController.swift */,
@@ -65,6 +81,16 @@
 				E3252325246D8963002C82D3 /* Info.plist */,
 			);
 			path = ReusuableComponents;
+			sourceTree = "<group>";
+		};
+		E325232B246D896F002C82D3 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				E3252332246D9120002C82D3 /* TransitionDelegate.swift */,
+				E3252334246D955D002C82D3 /* PresentationController.swift */,
+				E3252336246DA6D4002C82D3 /* OptionalViewsForReusables.swift */,
+			);
+			path = Reusables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +153,7 @@
 			files = (
 				E3252324246D8963002C82D3 /* LaunchScreen.storyboard in Resources */,
 				E3252321246D8963002C82D3 /* Assets.xcassets in Resources */,
+				E3252331246D8A16002C82D3 /* PopupViewController.xib in Resources */,
 				E325231F246D8961002C82D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +166,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E325231C246D8961002C82D3 /* ViewController.swift in Sources */,
+				E3252339246EDF26002C82D3 /* FordPopUp.swift in Sources */,
+				E3252333246D9120002C82D3 /* TransitionDelegate.swift in Sources */,
+				E3252337246DA6D4002C82D3 /* OptionalViewsForReusables.swift in Sources */,
 				E3252318246D8961002C82D3 /* AppDelegate.swift in Sources */,
+				E3252330246D8A16002C82D3 /* PopupViewController.swift in Sources */,
 				E325231A246D8961002C82D3 /* SceneDelegate.swift in Sources */,
+				E3252335246D955D002C82D3 /* PresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

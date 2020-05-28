@@ -8,14 +8,30 @@
 
 import UIKit
 
-class FordPopUp: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class FordPopUp: OptionalViewsForReusables{
+ 
+    override func setTopConstraintForButtonElement() -> CGFloat {
+        return 260
     }
-    */
-
+    
+    override func setHeader() -> String{
+         return "Ford"
+     }
+    
+    override func setBody() -> String{
+        return "Your body text goes here for the ford project"
+    }
+    
+    
+    override func setNumberOfButtons() -> Int {
+        return 2
+    }
+    
+    override func setButtonTitles() -> [String] {
+        return ["Button One", "Button Two"]
+    }
+    
+    override func setButtonImages() -> [UIImage] {
+        return [UIImage(systemName: "triangle.fill")!, UIImage(systemName: "triangle.fill")!,UIImage(systemName: "triangle.fill")!]
+    }
 }
